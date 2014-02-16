@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".subactivity.CreateNewEntryActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/LabelNewEntry"
+            android:text="@string/facts_weight_label" />
+
+        <EditText
+            android:id="@+id/textbox_weight"
+            style="@style/EditTextNewEntry"
+            android:hint="@string/facts_kg_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/LabelNewEntry"
+            android:text="@string/facts_body_fat_label" />
+
+        <EditText
+            android:id="@+id/textbox_body_fat"
+            style="@style/EditTextNewEntry"
+            android:hint="@string/facts_percent_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/LabelNewEntry"
+            android:text="@string/facts_body_water_label" />
+
+        <EditText
+            android:id="@+id/textbox_body_water"
+            style="@style/EditTextNewEntry"
+            android:hint="@string/facts_percent_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/LabelNewEntry"
+            android:text="@string/facts_muscle_ratio_label" />
+
+        <EditText
+            android:id="@+id/textbox_muscle_ratio"
+            style="@style/EditTextNewEntry"
+            android:hint="@string/facts_percent_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/LabelNewEntry"
+            android:text="@string/facts_bone_label" />
+
+        <EditText
+            android:id="@+id/textbox_bone"
+            style="@style/EditTextNewEntry"
+            android:hint="@string/facts_kg_hint" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        style="@style/ButtonGeneral"
+        android:background="@color/text_color_blue"
+        android:onClick="saveClick"
+        android:text="@string/save" />
+
+</LinearLayout>

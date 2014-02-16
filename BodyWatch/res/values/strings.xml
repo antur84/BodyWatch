@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BodyWatch</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="new_entry">Weigh in</string>
+    <string name="view_stats">View Stats</string>
+    <string name="save">Save</string>
+    <string name="facts_percent_hint">Enter decimals in %</string>
+    <string name="facts_kg_hint">Enter decimals in kg</string>
+    <string name="facts_weight_label">Weight</string>
+    <string name="facts_body_fat_label">Body fat</string>
+    <string name="facts_body_water_label">Body water</string>
+    <string name="facts_muscle_ratio_label">Muscle ratio</string>
+    <string name="facts_bone_label">Bone weight</string>
+    
+    <string name="title_activity_create_new_entry">Create New Entry</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
