@@ -1,8 +1,10 @@
-package turku.com.bodywatch.model;
+package com.turku.bodywatch.model;
 
+import java.util.Collections;
 import java.util.List;
 
-import turku.com.bodywatch.model.domainobjects.WeightEntry;
+import com.turku.bodywatch.model.domainobjects.WeightEntry;
+
 import android.content.Context;
 
 public class BodyWatchRepository implements IBodyWatchRepository {
@@ -15,17 +17,20 @@ public class BodyWatchRepository implements IBodyWatchRepository {
 	
 	@Override
 	public void insertWeightEntry(WeightEntry weightEntry) {
-		dbHelper.InsertWeight(weightEntry);
+		dbHelper.insertWeightEntry(weightEntry);
 	}
 	
 	@Override
-	public String getAllWeightEntries() {
-		String result = "";
+	public List<WeightEntry> getAllWeightEntries() {
 		List<WeightEntry> entries = dbHelper.getAllWeightEntries();
-		for (WeightEntry w : entries) {
-			result += w.getId();
-		}
-		
-		return result;
+		Collections.sort(entries, new RegistrationDateComparer());
+		return entries;
+	}
+
+	@Override
+	public void deleteWeightEntries(List<Integer> _selectedRows) {
+		for (int i = 0; i < _selectedRows.size(); i++) {
+			dbHelper.deleteWeightEntry(_selectedRows.get(i));
+		}		
 	}
 }

@@ -1,4 +1,4 @@
-package turku.com.bodywatch.util;
+package com.turku.bodywatch.util;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

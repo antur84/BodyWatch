@@ -1,14 +1,14 @@
-package turku.com.bodywatch.model.domainobjects;
+package com.turku.bodywatch.model.domainobjects;
 
-public class BodyWater extends ValueObjectBase<Long> {
-	private final long bodyWater;
+public class BodyWater extends ValueObjectBase<Double> {
+	private final Double bodyWater;
 	
-	public BodyWater(long bodyWater){
+	public BodyWater(Double bodyWater){
 		this.bodyWater = bodyWater;
 	}
 
 	@Override
-	public Long getValue() {
+	public Double getValue() {
 		return bodyWater;
 	}
 }

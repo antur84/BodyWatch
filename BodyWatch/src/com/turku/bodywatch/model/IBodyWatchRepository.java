@@ -1,10 +1,14 @@
-package turku.com.bodywatch.model;
+package com.turku.bodywatch.model;
 
-import turku.com.bodywatch.model.domainobjects.WeightEntry;
+import java.util.List;
+
+import com.turku.bodywatch.model.domainobjects.WeightEntry;
 
 public interface IBodyWatchRepository {
 
 	void insertWeightEntry(WeightEntry weightEntry);
 
-	String getAllWeightEntries();
+	List<WeightEntry> getAllWeightEntries();
+
+	void deleteWeightEntries(List<Integer> _selectedRows);
 }

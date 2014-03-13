@@ -1,14 +1,20 @@
-package turku.com.bodywatch.model.domainobjects;
+package com.turku.bodywatch.model.domainobjects;
 
-public class BodyWeight extends ValueObjectBase<Long> {
-	private final long bodyWeight;
+
+public class BodyWeight extends ValueObjectBase<Double> {
+	private final double bodyWeight;
 	
-	public BodyWeight(long bodyWeight){
+	public BodyWeight(Double bodyWeight) throws IllegalArgumentException{
+		
+		if(bodyWeight <= 0){
+			throw new IllegalArgumentException("bodyWeight can't be 0 or negative");
+		}
+		
 		this.bodyWeight = bodyWeight;
 	}
 
 	@Override
-	public Long getValue() {
+	public Double getValue() {
 		return bodyWeight;
 	}
 }

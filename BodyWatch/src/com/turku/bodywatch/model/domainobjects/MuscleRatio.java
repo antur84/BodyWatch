@@ -1,14 +1,14 @@
-package turku.com.bodywatch.model.domainobjects;
+package com.turku.bodywatch.model.domainobjects;
 
-public class MuscleRatio extends ValueObjectBase<Long> {
-	private final long muscleRatio;
+public class MuscleRatio extends ValueObjectBase<Double> {
+	private final Double muscleRatio;
 	
-	public MuscleRatio(long muscleRatio){
+	public MuscleRatio(Double muscleRatio){
 		this.muscleRatio = muscleRatio;
 	}
 
 	@Override
-	public Long getValue() {
+	public Double getValue() {
 		return muscleRatio;
 	}
 }

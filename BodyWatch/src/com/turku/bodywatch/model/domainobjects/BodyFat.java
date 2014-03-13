@@ -1,14 +1,14 @@
-package turku.com.bodywatch.model.domainobjects;
+package com.turku.bodywatch.model.domainobjects;
 
-public class BodyFat extends ValueObjectBase<Long> {
-	private final long bodyFat;
+public class BodyFat extends ValueObjectBase<Double> {
+	private final Double bodyFat;
 	
-	public BodyFat(long bodyFat){
+	public BodyFat(Double bodyFat){
 		this.bodyFat = bodyFat;
 	}
 
 	@Override
-	public Long getValue() {
+	public Double getValue() {
 		return bodyFat;
 	}
 }

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridHeader"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    tools:context=".subactivity.ListAllEntriesInTableActivity" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25dp" >
+
+        <TextView
+            style="@style/AllEntriesTableTextViewHeader"
+            android:text="@string/facts_regdate_label" >
+        </TextView>
+
+        <TextView
+            style="@style/AllEntriesTableTextViewHeader"
+            android:text="@string/facts_weight_label" >
+        </TextView>
+
+        <TextView
+            style="@style/AllEntriesTableTextViewHeader"
+            android:text="@string/facts_body_fat_label" >
+        </TextView>
+
+        <TextView
+            style="@style/AllEntriesTableTextViewHeader"
+            android:text="@string/facts_body_water_label" >
+        </TextView>
+
+        <TextView
+            style="@style/AllEntriesTableTextViewHeader"
+            android:text="@string/facts_muscle_ratio_label" >
+        </TextView>
+
+        <TextView
+            style="@style/AllEntriesTableTextViewHeader"
+            android:text="@string/facts_bone_label" >
+        </TextView>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="@color/black_overlay" />
+
+    <ScrollView
+        android:id="@+id/table_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp" >
+
+        <TableLayout
+            android:id="@+id/gridEntries"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            tools:context=".subactivity.ListAllEntriesInTableActivity" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="25dp" >
+
+                <TextView
+                    style="@style/AllEntriesTableTextViewHeader"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/facts_regdate_label" >
+                </TextView>
+
+                <TextView
+                    style="@style/AllEntriesTableTextViewHeader"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/facts_weight_label" >
+                </TextView>
+
+                <TextView
+                    style="@style/AllEntriesTableTextViewHeader"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/facts_body_fat_label" >
+                </TextView>
+
+                <TextView
+                    style="@style/AllEntriesTableTextViewHeader"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/facts_body_water_label" >
+                </TextView>
+
+                <TextView
+                    style="@style/AllEntriesTableTextViewHeader"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/facts_muscle_ratio_label" >
+                </TextView>
+
+                <TextView
+                    style="@style/AllEntriesTableTextViewHeader"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/facts_bone_label" >
+                </TextView>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</TableLayout>

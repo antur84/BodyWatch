@@ -1,4 +1,4 @@
-package turku.com.bodywatch.util;
+package com.turku.bodywatch.util;
 
 import android.app.Activity;
 import android.os.Build;
